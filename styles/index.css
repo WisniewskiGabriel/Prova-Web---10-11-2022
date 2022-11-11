@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+:root{
+ --background-blue:#043873;
+ --highlight-lighter-blue:#4F9CF9;
+}
 p,h1,h2,h3{
     font-family: Inter;
 }
@@ -10,7 +13,7 @@ p{
     font-weight: 400;
 }
 body{
-    background-color: #043873;
+    background-color: var(--background-blue);
     margin: 0;
 }
 header{
@@ -38,10 +41,43 @@ header picture{
     width: 42px;
     background-color: white;
 }
+.first-page{
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+.first-page article{
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.first-page button{
+    background-color: var(--highlight-lighter-blue);
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+}
+.first-page p{
+    color:white;
+}
 @media (max-width:320px){
     h2{
         font-size: 1rem;
+    }
+    h1{
+        margin:auto;
+        padding-left:1rem;
+        padding-right:1rem;
+        font-size: 2rem;
     }   
+    .first-page p{
+        margin:auto;
+        padding-left:1rem;
+        padding-right:1rem;
+
+    }
 }
 @media (min-width:321px) and (min-width:768px){
     h2{
