@@ -17,12 +17,11 @@ header{
     color:white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0rem 1rem 0rem 1rem;
+    justify-content: flex-start
 }
-header
 header picture{
-    padding-right: 0.4rem;
+    padding-right: 0.5rem;
 }
 .menu-burger{
     display: flex;
@@ -30,6 +29,9 @@ header picture{
     justify-content: space-between;
     width: 42px;
     height: 21px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
 }
 .barra{
     height: 2px;
