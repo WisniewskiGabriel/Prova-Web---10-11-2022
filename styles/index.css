@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*vars*/
 :root{
  --background-blue:#043873;
  --highlight-lighter-blue:#4F9CF9;
 }
+
+/*normalizar tags*/
 p,h1,h2,h3{
     font-family: Inter;
 }
@@ -16,6 +20,11 @@ body{
     background-color: var(--background-blue);
     margin: 0;
 }
+main {
+    width: 100%;
+}
+
+/*cabeçalho*/
 header{
     color:white;
     display: flex;
@@ -41,9 +50,13 @@ header picture{
     width: 42px;
     background-color: white;
 }
+
+/*primeira pág. */
 .first-page{
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+    background-image: url(/imgs/Element.svg);
+
 }
 .first-page article{
     color:white;
@@ -62,6 +75,36 @@ header picture{
 .first-page p{
     color:white;
 }
+
+/*segunda página*/
+.working-together{
+    background-color: white;
+}
+.working-together article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+.working-together h1 {
+    font-size: 2rem;
+    padding: 1rem 0rem 0rem 1rem;
+}
+.working-together p{
+    padding: 0.5rem 0rem 0rem 0.5rem;
+}
+.working-together button{
+    background-color: var(--highlight-lighter-blue);
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 50vw;
+}
+
+
+/*breakpoints do mídia query*/
 @media (max-width:320px){
     h2{
         font-size: 1rem;
@@ -76,8 +119,34 @@ header picture{
         margin:auto;
         padding-left:1rem;
         padding-right:1rem;
-
     }
+    .working-together button{
+        background-color: var(--highlight-lighter-blue);
+        border: none;
+        border-radius: 0.5rem;
+        height: 3rem;
+        width: 50vw;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .working-together img{
+        width: 85vw;
+        margin-top: 2rem;
+    }
+    footer{
+        color:white;
+        font-family: Inter;
+        font-size: 1rem;
+        margin: 1.8rem;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+    
 }
 @media (min-width:321px) and (min-width:768px){
     h2{
